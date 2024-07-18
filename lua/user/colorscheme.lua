@@ -3,10 +3,10 @@ local M = {
       lazy = false, -- make sure we load this during startup if it is your main colorscheme
       priority = 1000, -- make sure to load this before all the other start plugins
     }
-    
+
   function M.config()
       local transparent = true -- set to true if you would like to enable transparency
-  
+
       local bg = "#011628"
       local bg_dark = "#011423"
       local bg_highlight = "#143652"
@@ -16,7 +16,7 @@ local M = {
       local fg_dark = "#B4D0E9"
       local fg_gutter = "#627E97"
       local border = "#547998"
-  
+
       require("tokyonight").setup({
           style = "night",
           transparent = transparent,
@@ -42,8 +42,8 @@ local M = {
             colors.fg_sidebar = fg_dark
           end,
         })
-  
+
         vim.cmd("colorscheme tokyonight")
   end
-    
+
   return M

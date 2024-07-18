@@ -1,0 +1,5 @@
+{
+  "lazy.nvim": { "branch": "main", "commit": "5473e3d77c13e40fc4758fa977a1f2c14d0b4ceb" },
+  "tokyonight.nvim": { "branch": "main", "commit": "08046705ba488f903e7ef3e823ccacc5775e1483" },
+  "vim-tmux-navigator": { "branch": "master", "commit": "5b3c701686fb4e6629c100ed32e827edf8dad01e" }
+}

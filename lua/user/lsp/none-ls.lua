@@ -1,24 +1,26 @@
 local M = {
     "nvimtools/none-ls.nvim",
-  }
-  
-  function M.config()
+}
+
+function M.config()
     local null_ls = require "null-ls"
-  
+
     local formatting = null_ls.builtins.formatting
     local diagnostics = null_ls.builtins.diagnostics
-  
+
     null_ls.setup {
-      debug = true,
-      sources = {
-        formatting.stylua,
-        formatting.prettier,
-        formatting.black,
-        formatting.shfmt,
-        null_ls.builtins.diagnostics.eslint,
-        null_ls.builtins.completion.spell,
-      },
+        debug = true,
+        sources = {
+            formatting.stylua,
+            formatting.prettier.with({
+                extra_args = { "--tab-width", "4", "--use-tabs" },
+            }),
+            formatting.black,
+            formatting.shfmt,
+            null_ls.builtins.diagnostics.eslint,
+            null_ls.builtins.completion.spell,
+        },
     }
-  end
-  
-  return M
+end
+
+return M

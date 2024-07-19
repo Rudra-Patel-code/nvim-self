@@ -21,4 +21,6 @@ spec("user.autotags")
 spec "user.bufferline"
 spec("user.git")
 spec("user.indentline")
+spec("user.alpha")
+spec("user.trouble")
 require ("user.lazy")

@@ -6,7 +6,7 @@ local opts = { noremap = true, silent = true }
 
 -- Telescope keybindings
 map("n", "<leader>,", "<cmd>Telescope buffers sort_mru=true sort_lastused=true<cr>", opts)
-map("n", "<leader>/", "<cmd>Telescope live_grep<cr>", opts)
+map("n", "<leader>ft", "<cmd>Telescope live_grep<cr>", opts)
 map("n", "<leader>:", "<cmd>Telescope command_history<cr>", opts)
 map("n", "<leader><space>", "<cmd>Telescope find_files<cr>", opts)
 map("n", "<leader>fb", "<cmd>Telescope buffers sort_mru=true sort_lastused=true<cr>", opts)

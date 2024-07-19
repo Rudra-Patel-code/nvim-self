@@ -16,11 +16,14 @@ spec "user.lualine"
 spec "user.telescope"
 require "user.telescope-keybindings"
 spec "user.lsp.treesitter"
+spec("user.git.gitsigns")
 spec("user.bufferline")
 spec("user.autotags")
 spec "user.bufferline"
-spec("user.git")
+spec("user.git.lazygit")
 spec("user.indentline")
 spec("user.alpha")
 spec("user.trouble")
+spec("user.comments")
+spec("user.dressing")
 require ("user.lazy")

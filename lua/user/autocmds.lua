@@ -84,12 +84,3 @@ vim.api.nvim_create_autocmd({ "CursorHold" }, {
     end,
 })
 
-vim.api.nvim_create_autocmd("VimEnter", {
-    pattern = { "*" },
-    callback = function()
-        local directory = vim.fn.isdirectory(vim.fn.expand "%:p")
-        if directory == 1 then
-            require("neo-tree.command").execute { toggle = true, dir = vim.fn.getcwd() }
-        end
-    end,
-})
